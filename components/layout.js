@@ -39,7 +39,6 @@ const Layout = ({ children, home }) => {
           </>
         ) : (
           <>
-            {console.log(home)}
             <Link href="/">
               <Image
                 priority
@@ -61,7 +60,7 @@ const Layout = ({ children, home }) => {
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
-          <Link href="/">Back to Home</Link>
+          <Link href="/">← Back to Home</Link>
         </div>
       )}
     </div>
